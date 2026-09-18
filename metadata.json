@@ -1,0 +1,10 @@
+{
+  "name": "صندوق وام و پس‌انداز خانوادگی",
+  "description": "سامانه جامع مدیریت و حسابداری خرد صندوق وام، پس‌انداز، وام‌های گردشی و ضروری، دفتر روزنامه دوبل و معین اعضا",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

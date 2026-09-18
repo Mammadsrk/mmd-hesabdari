@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="fundGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#fundGrad)" />
+  <circle cx="256" cy="256" r="170" fill="#ffffff" opacity="0.1" />
+  <!-- Safe zone icon: Family / Vault / Money Tree -->
+  <g transform="translate(106, 106) scale(0.585)">
+    <!-- Vault / House roof -->
+    <path d="M256 40 L440 160 H72 Z" fill="#ffffff" />
+    <!-- Pillars -->
+    <rect x="90" y="180" width="40" height="180" rx="8" fill="#ffffff" />
+    <rect x="180" y="180" width="40" height="180" rx="8" fill="#ffffff" />
+    <rect x="290" y="180" width="40" height="180" rx="8" fill="#ffffff" />
+    <rect x="380" y="180" width="40" height="180" rx="8" fill="#ffffff" />
+    <!-- Base -->
+    <rect x="50" y="380" width="412" height="40" rx="10" fill="#ffffff" />
+    <!-- Center Coin -->
+    <circle cx="256" cy="270" r="48" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="6" />
+    <text x="256" y="284" font-size="42" font-weight="bold" fill="#78350f" text-anchor="middle" font-family="sans-serif">﷼</text>
+  </g>
+</svg>

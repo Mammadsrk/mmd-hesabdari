@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --font-sans: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Vazirmatn', monospace;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    letter-spacing: 0;
+    line-height: 1.7;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body {
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    letter-spacing: 0;
+    line-height: 1.7;
+    font-size: 15.5px;
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings typography hierarchy with balanced leading for Persian Naskh */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'B Nazanin', 'BNazanin', Tahoma, sans-serif;
+    letter-spacing: 0;
+    line-height: 1.45;
+  }
+
+  p {
+    line-height: 1.85;
+    letter-spacing: 0;
+  }
+
+  /* Form elements, inputs and buttons font normalization */
+  input, select, textarea, button {
+    font-family: 'B Nazanin', 'BNazanin', Tahoma, sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    letter-spacing: 0;
+  }
+
+  /* Financial tables and lists tabular alignment */
+  table, tr, th, td, dl, dt, dd {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+}
+
+/* Tabular numbers utility for all financial metrics, dates, cards and tables */
+.tabular-nums,
+[data-numeric="true"],
+.font-tabular {
+  font-variant-numeric: tabular-nums !important;
+  font-feature-settings: "tnum" 1 !important;
+}
+
+/* Persian typography leading helpers */
+.leading-persian-tight {
+  line-height: 1.45;
+}
+.leading-persian-normal {
+  line-height: 1.75;
+}
+.leading-persian-relaxed {
+  line-height: 1.9;
+}
+
+/* Custom subtle scrollbar hiding for horizontal mobile chips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe area bottom padding helper for mobile nav */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* Smooth micro-interactions */
+button, a, input, select {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
